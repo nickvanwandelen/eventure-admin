@@ -1,0 +1,39 @@
+page-dashboard {
+
+}
+
+#cards_rowA{
+  display:flex;
+  align-items: center;
+}
+
+#event_information_card{
+  background-color: #2ec95c;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+#event_information_card img{
+  width: 128px;
+  height: 128px;
+  float: left;
+}
+
+#event_information_card div{
+  float: right;
+  width: 75%;
+}
+
+#beacons_card{
+  background-color: #488aff;
+  width: 30%;
+  height: 30%;
+}
+
+#targets_card{
+  background-color: #f53d3d;
+  width: 30%;
+  height: 30%;
+}
+

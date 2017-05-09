@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button clear (click)="dismiss()">
+      <ion-icon name="md-close"></ion-icon>
+    </button>
+    <ion-title>Target</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-left>
+        <ion-img src="{{target_avatar}}"></ion-img>
+      </ion-avatar>
+      <h2>{{target_name}}</h2>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Type:</ion-label>
+      <ion-input item-right disabled="{{!editing}}" value="{{target_type}}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Information:</ion-label>
+      <ion-input item-right disabled="{{!editing}}" value="{{target_info}}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Target ID:</ion-label>
+      <ion-input item-right disabled="{{!editing}}" value="{{target_id}}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Beacon ID:</ion-label>
+      <ion-input item-right disabled="{{!editing}}" value="{{target_beacon_id}}"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab bottom right margin>
+    <button ion-fab color="primary">
+      <ion-icon name="arrow-dropup"></ion-icon>
+    </button>
+    <ion-fab-list side="top">
+      <button ion-fab (click)="handleEdit()"><ion-icon name="create"></ion-icon></button>
+      <button ion-fab (click)="handleDelete()"><ion-icon name="trash"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
